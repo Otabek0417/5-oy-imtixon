@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { IoRefresh, AiOutlineClear } from "react-icons/all";
-import { Link } from "react-router-dom";
 function Form({ data, setData, searchData, refresh }) {
   console.log("FORM", data);
 
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
   return (
     <form
       onSubmit={(e) => {

@@ -15,12 +15,11 @@ function User({ data, isPending, error, deleteOperation }) {
           const { name, picture, dob, location, gender, id, email } = result;
 
           return (
-            <li
-              key={email}
-              onClick={() => deleteOperation(email)}
-              className="user__item"
-            >
-              <button className="user__delete--btn">
+            <li key={email} className="user__item">
+              <button
+                onClick={() => deleteOperation(email)}
+                className="user__delete--btn"
+              >
                 <MdDelete style={{ fontSize: "35px" }} />
               </button>
               <img

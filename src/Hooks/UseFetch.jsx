@@ -44,7 +44,7 @@ const UseFetch = (url) => {
         const name = `${item.name.title}${item.name.first}${item.name.last}`
           .trim()
           .toLowerCase();
-        return name.includes(inputName.trim());
+        return name.includes(inputName.trim().toLowerCase());
       });
       setData({ results: searchData });
     } else {
